@@ -1,3 +1,6 @@
+#ifndef GAMEBOARD_H
+#define GAMEBOARD_H
+
 #define BOARD_HEIGHT 24 // the top 4 rows are invisible
 #define BOARD_HEIGHT_VISIBLE 20 // excludes the top 4 rows
 #define BOARD_WIDTH 12
@@ -46,3 +49,5 @@ bool hasTileAtPosition(int x, int y);
 void drawTile(int x, int y, const unsigned short* tile);
 const unsigned short* tileSpriteForType(enum TILE type);
 void drawTileAtPixel(int x, int y, const unsigned short* tile);
+
+#endif //GAMEBOARD_H
