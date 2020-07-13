@@ -1,3 +1,6 @@
+#ifndef GBALIB_H
+#define GBALIB_H
+
 // Define booleans (because why not?)
 #define TRUE (0xFF)
 #define FALSE (0x00)
@@ -113,3 +116,5 @@ extern const unsigned char fontdata_6x8[12288];
 
 void drawChar(int x, int y, char ch, unsigned short color);
 void drawString(int x, int y, char *str, unsigned short color);
+
+#endif // GBALIB_H

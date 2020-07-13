@@ -1,3 +1,6 @@
+#ifndef PENTOMINO_H
+#define PENTOMINO_H
+
 /*
  * Pentomino tile arrangements are kept as unsigned shorts where each bit
  * corresponds to a position on the following grid:
@@ -78,3 +81,5 @@ PENTOMINO moveLeft(PENTOMINO pent);
 PENTOMINO moveRight(PENTOMINO pent);
 PENTOMINO getPentomino(TILE tileType);
 PENTOMINO getPentominoWithPos(TILE tileType, int x, int y);
+
+#endif // PENTOMINO_H

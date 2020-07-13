@@ -1,3 +1,6 @@
+#ifndef MUSIC_H
+#define MUSIC_H
+
 // Interrupts
 #define REG_IE  *(volatile unsigned short*) 0x4000200
 #define REG_IF  *(volatile unsigned short*) 0x4000202
@@ -73,3 +76,4 @@ typedef void (*irqptr)(void);
 
 void initMusic();
 
+#endif //MUSIC_H
